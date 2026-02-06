@@ -27,8 +27,8 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies
-        # 使用 --legacy-peer-deps 忽略版本衝突，確保安裝成功
-        run: npm install --legacy-peer-deps
+        # 使用 npm ci 並包含 devDependencies，確保在 CI 中也會安裝 build-time 套件（例如 vite）
+        run: npm ci --legacy-peer-deps --include=dev
 
       - name: Build
         run: npm run build

@@ -3,8 +3,8 @@
  * 包含流式传输、Agent 调用、缓存管理等功能
  */
 
-import { TelecomAIAgent, globalAgent } from '../services/agent/TelecomAIAgent.js';
-import { AICallOptions } from '../services/agent/TelecomAIAgent.js';
+import { TelecomAIAgent, globalAgent } from '../services/agent/TelecomAIAgent';
+import { AICallOptions } from '../services/agent/TelecomAIAgent';
 
 /**
  * 注册 Agent 相关的 API 端点

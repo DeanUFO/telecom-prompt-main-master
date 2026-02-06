@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start:server": "node server/index.js"
+    "start:server": "tsx server/index.js"
   },
   "dependencies": {
     "@google/genai": "*",
@@ -26,6 +26,7 @@
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
     "@vitejs/plugin-react": "^4.2.1",
+    "tsx": "^4.21.0",
     "typescript": "^5.2.2",
     "vite": "^5.1.6"
   }

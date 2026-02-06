@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 import fs from 'fs';
 import { v4 as uuidv4 } from 'uuid';
 import PptxGenJS from 'pptxgenjs';
-import registerAgentEndpoints from './agentEndpoints.js';
+import registerAgentEndpoints from './agentEndpoints';
 
 const app = express();
 

@@ -4,7 +4,6 @@
  */
 
 import { TelecomAIAgent, globalAgent } from '../services/agent/TelecomAIAgent';
-import { AICallOptions } from '../services/agent/TelecomAIAgent';
 
 /**
  * 注册 Agent 相关的 API 端点

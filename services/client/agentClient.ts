@@ -65,8 +65,10 @@ export interface MCPToolInfo {
 export class AgentClient {
   private serverUrl: string;
 
-  constructor(serverUrl: string = 'http://localhost:3001') {
-    this.serverUrl = serverUrl;
+  constructor(serverUrl?: string) {
+    // 先嘗試從 Vite 環境變數取得後端位址，否則使用傳入參數或預設 localhost
+    const envUrl = (import.meta as any)?.env?.VITE_API_URL;
+    this.serverUrl = serverUrl || envUrl || 'http://localhost:3001';
   }
 
   /**

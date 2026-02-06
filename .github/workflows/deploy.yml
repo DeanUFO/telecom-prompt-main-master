@@ -34,6 +34,9 @@ jobs:
         run: npm run build
         env:
           API_KEY: ${{ secrets.API_KEY }}
+          # 請在 GitHub Secrets 中設定 BACKEND_URL (例如 https://api.example.com)，
+          # workflow 將把它傳給前端作為 VITE_API_URL
+          VITE_API_URL: ${{ secrets.BACKEND_URL }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
